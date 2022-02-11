@@ -45,6 +45,9 @@ class UsersExport implements FromQuery, WithHeadings
             'Title',
             'Desc',
             'Date',
+            'Start Time',
+            'End Time',
+            'Downtime',
             'Created At',
             'Updated At',
         ];

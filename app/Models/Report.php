@@ -9,5 +9,5 @@ class Report extends Model
 {
     use HasFactory;
     protected $table= "report";
-    protected $fillable=["customer","title","desc","date","created_at","updated_at","start_date","end_date"];
+    protected $fillable=["customer","title","desc","date","created_at","updated_at","start_date","end_date","start_time","end_time","downtime"];
 }

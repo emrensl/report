@@ -440,6 +440,9 @@ $get_enddate = $_GET['end_date'];
                     <th>Açıklama</th>
                     <th>Tarih</th>
                     <th>Ekleme Tarihi</th>
+                    <th>Başlama Saati</th>
+                    <th>Bitiş Saati</th>
+                    <th>Kesinti Süresi</th>
                     <th class="hidden"></th>
                     <th></th>
                 </tr>
@@ -454,6 +457,9 @@ $get_enddate = $_GET['end_date'];
                         <td>{{$musteri->desc}}</td>
                         <td>{{$musteri->date}}</td>
                         <td>{{$musteri->created_at}}</td>
+                        <td>{{$musteri->start_time}}</td>
+                        <td>{{$musteri->end_time}}</td>
+                        <td>{{$musteri->downtime}}</td>
                         <td class="hidden">Güncelle</td>
                         <td><a class="btn btn-danger" href='/delete_model/{{$musteri->id}}'>Sil</a></td>
                     </tr>

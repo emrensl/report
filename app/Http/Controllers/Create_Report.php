@@ -18,6 +18,9 @@ class Create_Report extends Controller
         $title=$request->title;
         $desc=$request->desc;
         $date=$request->date;
+        $starttime=$request->start_time;
+        $endtime=$request->end_time;
+        $downtime=$request->downtime;
         echo  $customer ."<br>";
         echo  $title ."<br>";
         echo  $desc ."<br>";
@@ -27,6 +30,9 @@ class Create_Report extends Controller
             "title"=>$title,
             "desc"=>$desc,
             "date"=>$date,
+            "start_time"=>$starttime,
+            "end_time"=>$endtime,
+            "downtime"=>$downtime,
         ]);
 echo "Verileriniz eklenmiştir.";
 header("Refresh: 3; url=http://localhost:8000");
